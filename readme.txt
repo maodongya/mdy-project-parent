@@ -1,2 +1,2 @@
 git 提交密码
-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
+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
