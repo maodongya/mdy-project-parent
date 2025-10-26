@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mdy.web.persistence.dao.ChannelCompanyPayMethodDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.mdy.web.persistence.entity.ChannelCompanyPayMethodEntity" id="channelCompanyPayMethodMap">
+        <result property="id" column="id"/>
+        <result property="companyNo" column="company_no"/>
+        <result property="subCompanyNo" column="sub_company_no"/>
+        <result property="payMethodNo" column="pay_method_no"/>
+        <result property="cardType" column="card_type"/>
+        <result property="singleOrBatch" column="single_or_batch"/>
+        <result property="synchroniseOrAsynchronous" column="synchronise_or_asynchronous"/>
+        <result property="certificateNo" column="certificate_no"/>
+        <result property="bankConfig" column="bank_config"/>
+        <result property="feeConfig" column="fee_config"/>
+        <result property="currencyConfig" column="currency_config"/>
+        <result property="payElementsConfig" column="pay_elements_config"/>
+        <result property="paymentLimitConfig" column="payment_limit_config"/>
+        <result property="createdAt" column="created_at"/>
+        <result property="updatedAt" column="updated_at"/>
+        <result property="deleteAt" column="delete_at"/>
+        <result property="creator" column="creator"/>
+        <result property="updater" column="updater"/>
+    </resultMap>
+</mapper>

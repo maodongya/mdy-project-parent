@@ -1,0 +1,35 @@
+server:
+  port: 18081
+spring:
+  application:
+    name: mdy-mysql-web-parentß
+  cloud:
+    discovery:
+      enable: true
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        import-check:
+          enabled: false
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #MySQL配置
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mdychannel?useUnicode=true&characterEncoding=UTF-8&useSSL=true&serverTimezone=Asia/Shanghai
+    username: testuser
+    password: 123456
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+#feign:
+#  client:
+#    config:
+#      default:
+#        connectTimeout: 30000
+#        readTimeout: 5000

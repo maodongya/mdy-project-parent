@@ -12,6 +12,7 @@
     <modules>
         <module>mdy-web-parent</module>
         <module>mdy-mysql-web-parent</module>
+        <module>mdy-web-client-parent</module>
     </modules>
 
 </project>

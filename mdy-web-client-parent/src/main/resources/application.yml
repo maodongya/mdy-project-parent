@@ -2,7 +2,7 @@ server:
   port: 18081
 spring:
   application:
-    name: mdy-pay-web-simple
+    name: mdy-mysql-web-parentß
   cloud:
     discovery:
       enable: true
@@ -12,6 +12,7 @@ spring:
       config:
         import-check:
           enabled: false
+
 #feign:
 #  client:
 #    config:
