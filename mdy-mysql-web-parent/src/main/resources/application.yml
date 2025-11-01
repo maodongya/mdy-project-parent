@@ -2,7 +2,7 @@ server:
   port: 18081
 spring:
   application:
-    name: mdy-mysql-web-parentß
+    name: mdy-mysql-web-parent
   cloud:
     discovery:
       enable: true
@@ -17,7 +17,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     #MySQL配置
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mdychannel?useUnicode=true&characterEncoding=UTF-8&useSSL=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/sqlweb?useUnicode=true&characterEncoding=UTF-8&useSSL=true&serverTimezone=Asia/Shanghai
     username: testuser
     password: 123456
 

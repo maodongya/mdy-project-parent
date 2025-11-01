@@ -1,0 +1,71 @@
+-- ----------------------------
+-- Table structure for mdy_inventory
+-- 保存订单信息
+-- ----------------------------
+DROP TABLE IF EXISTS `mdy_inventory`;
+CREATE TABLE `mdy_inventory` (
+  `id` int(20) NOT NULL AUTO_INCREMENT COMMENT 'order id',
+  `pay_order_no` varchar(64) NOT NULL DEFAULT '' COMMENT 'pay order no',
+  `info1` varchar(64) NOT NULL DEFAULT '' COMMENT 'info1',
+  `info2` varchar(64) NOT NULL DEFAULT '' COMMENT 'info2',
+  `info3` varchar(64) NOT NULL DEFAULT '' COMMENT 'info3',
+  `info4` varchar(64) NOT NULL DEFAULT '' COMMENT 'info4',
+  `info5` varchar(64) NOT NULL DEFAULT '' COMMENT 'info5',
+  `amount1` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount1',
+  `amount2` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount2',
+  `amount3` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount3',
+  `amount4` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount4',
+  `amount5` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount5',
+  `status1` varchar(64) NOT NULL DEFAULT 'init' COMMENT '支付状态：init,success,fail',
+  `status2` varchar(64) NOT NULL DEFAULT 'init' COMMENT 'status2',
+  `status3` varchar(64) NOT NULL DEFAULT 'init' COMMENT 'status3',
+  `status4` varchar(64) NOT NULL DEFAULT 'init' COMMENT 'status4',
+  `status5` varchar(64) NOT NULL DEFAULT 'init' COMMENT 'status5',
+  `time1` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time1',
+  `time2` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time2',
+  `time3` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time3',
+  `time4` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time4',
+  `time5` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time5',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `delete_at` bigint(20) NOT NULL DEFAULT '0' COMMENT '删除时间',
+  `creater` varchar(64) NOT NULL DEFAULT 'system' COMMENT '创建人员',
+  `updater` varchar(64) NOT NULL DEFAULT 'system' COMMENT '更新人员',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for mdy_inventory
+-- 保存库存信息
+-- ----------------------------
+DROP TABLE IF EXISTS `mdy_inventory`;
+CREATE TABLE `mdy_inventory` (
+  `id` int(20) NOT NULL AUTO_INCREMENT COMMENT 'order id',
+  `inventory_no` varchar(64) NOT NULL DEFAULT '' COMMENT '库存no',
+  `info1` varchar(64) NOT NULL DEFAULT '' COMMENT 'info1',
+  `info2` varchar(64) NOT NULL DEFAULT '' COMMENT 'info2',
+  `info3` varchar(64) NOT NULL DEFAULT '' COMMENT 'info3',
+  `info4` varchar(64) NOT NULL DEFAULT '' COMMENT 'info4',
+  `info5` varchar(64) NOT NULL DEFAULT '' COMMENT 'info5',
+  `amount1` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount1',
+  `amount2` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount2',
+  `amount3` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount3',
+  `amount4` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount4',
+  `amount5` bigint(20) NOT NULL DEFAULT '0' COMMENT 'amount5',
+  `status1` varchar(64) NOT NULL DEFAULT 'init' COMMENT '支付状态：init,success,fail',
+  `status2` varchar(64) NOT NULL DEFAULT 'init' COMMENT 'status2',
+  `status3` varchar(64) NOT NULL DEFAULT 'init' COMMENT 'status3',
+  `status4` varchar(64) NOT NULL DEFAULT 'init' COMMENT 'status4',
+  `status5` varchar(64) NOT NULL DEFAULT 'init' COMMENT 'status5',
+  `time1` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time1',
+  `time2` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time2',
+  `time3` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time3',
+  `time4` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time4',
+  `time5` bigint(20) NOT NULL DEFAULT '0' COMMENT 'time5',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `delete_at` bigint(20) NOT NULL DEFAULT '0' COMMENT '删除时间',
+  `creater` varchar(64) NOT NULL DEFAULT 'system' COMMENT '创建人员',
+  `updater` varchar(64) NOT NULL DEFAULT 'system' COMMENT '更新人员',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='库存表';
